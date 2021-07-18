@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;800&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/public/css/style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light container">
+        <a class="navbar-brand font-weight-bold" href="/html/home.html" style="color:#503AD8; font-family: 'Heebo', sans-serif;"><img src="/public/image/logo.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mx-auto mt-2 mt-lg-0" style="font-family: 'heebo', sans-serif;">
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/about.html">About </a>
+                </li>
+                <li class="nav-item  active">
+                    <a class="nav-link" href="/html/speech.html">Speech</a>
+                </li>
+            </ul>
+            <a class="ml-4" href="https://github.com/rpazfs/text-to-speech"><i class="fa fa-github" style="font-size:24px; color:black;"></i></a>
+            <a class=" ml-2" href="https://instagram.com/rpazfs?utm_medium=copy_link"><i class="fa fa-instagram" style="font-size:24px; color:black;"></i></a>
+        </div>
+    </nav>
+
+    <section class="container">
+
+        <div class="aksesoris text-center mt-2 mb-4">
+            <img src="/public/image/aksesoris.png" alt="aksesoris" style="margin-left: 60px;">
+        </div>
+
+        <h1 style="font-family: 'heebo', sans-serif; font-size: 46px; font-weight: bold; text-align: center;margin-left: 60px;">Text to Speech Converter</h1>
+
+        <div class="select">
+            <p class="mt-4" style="font-family: 'heebo', sans-serif;">Select Voice</p>
+            <!-- Select Menu for Voice -->
+            <select class="custom-select" id="voices"></select>
+        </div>
+
+        <div class="d-flex mt-4">
+            <div>
+                <p class="mt-4" style="font-family: 'heebo', sans-serif; line-height: 100%;">Volume</p>
+                <input type="range" min="0" max="1" value="1" step="0.1" id="volume" />
+                <span id="volume-label" class="ms-2">1</span>
+            </div>
+            <div class="mx-5">
+                <p class="mt-4" style="font-family: 'heebo', sans-serif; line-height: 100%;">Rate</p>
+                <input type="range" min="0.1" max="10" value="1" id="rate" step="0.1" />
+                <span id="rate-label" class="ms-2">1</span>
+            </div>
+            <div>
+                <p class="mt-4" style="font-family: 'heebo', sans-serif; line-height: 100%;">Pitch</p>
+                <input type="range" min="0" max="2" value="1" step="0.1" id="pitch" />
+                <span id="pitch-label" class="ms-2">1</span>
+            </div>
+        </div>
+
+        <textarea class="form-control mt-5" cols="30" rows="10" placeholder="Type something on your mind..."></textarea>
+
+        <!-- Control Buttons -->
+        <div class="mb-5">
+            <button id="start" class="btn btn-primary mt-5">Start</button>
+            <button id="pause" class="btn btn-info mt-5 ml-3">Pause</button>
+            <button id="resume" class="btn btn-secondary mt-5 ml-3">Resume</button>
+            <button id="cancel" class="btn btn-danger mt-5 ml-3">Cancel</button>
+        </div>
+
+    </section>
+
+    <footer class="text-center mt-5 pt-5">
+        <img class="mt-4" src="/public/image/footer.png" alt="footer">
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="/js/textSpeech.js"></script>
+</body>
+
+</html>

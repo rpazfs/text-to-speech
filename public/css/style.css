@@ -1,0 +1,41 @@
+.btn-primary {
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    font-family: 'Heebo';
+    color: white;
+    background-color: #334257;
+    border-radius: 30px;
+    border-color: #334257;
+}
+
+.btn-secondary {
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    font-family: 'Heebo';
+    color: black;
+    background-color: #C4C4C4;
+    border-radius: 30px;
+    border-color: #C4C4C4;
+}
+
+.btn-info {
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    font-family: 'Heebo';
+    color: white;
+    background-color: #548CA8;
+    border-radius: 30px;
+    border-color: #548CA8;
+}
+
+.btn-danger {
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    font-family: 'Heebo';
+    border-radius: 30px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 200%;
+}
